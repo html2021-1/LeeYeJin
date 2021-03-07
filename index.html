@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이예진 포트폴리오</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/pf.js"></script>    
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#000', 'red', 'green', 'blue', 'yellow'],
+                anchors: ['HOME', 'ABOUT', 'PORTFOLIO1', 'PORTFOLIO2', 'CONTACT'],
+                menu: '#gnbUl',
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                로고
+                <!-- 로고 이미지 제작 -->
+            </h1>
+            <nav id="gnb">
+                <ul id="gnbUl">
+                    <li data-menuanchor="HOME">
+                        <a href="#HOME">HOME</a>
+                    </li>
+                    <li data-menuanchor="ABOUT">
+                        <a href="#ABOUT">ABOUT</a>
+                    </li>
+                    <li data-menuanchor="PORTFOLIO1">
+                        <a href="#PORTFOLIO1">PORTFOLIO1</a>
+                    </li>
+                    <li data-menuanchor="PORTFOLIO2">
+                        <a href="#PORTFOLIO2">PORTFOLIO2</a>
+                    </li>
+                    <li data-menuanchor="CONTACT">
+                        <a href="#CONTACT">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="fullpage">
+            <section class="section" id="cnt1">
+                <h2>
+                    <span class="tit1 tit">
+                        <span>L</span><span>E</span><span>E</span><span>Y</span><span>E</span><span>J</span><span>I</span><span>N</span>
+                    </span>
+                    <span class="tit2 tit">
+                        <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
+                    </span>
+                </h2>
+                <div class="yellow_bg"></div>
+                <img class="photo" src="imges/home.png" alt="">
+                <svg version="1.1" id="shape" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="544px" height="627.154px"
+                    viewBox="0 0 544 627.154" enable-background="new 0 0 544 627.154" xml:space="preserve">
+                    <polygon fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="543.5,470.077 272,626.577 0.5,470.077 0.5,157.077 
+	                            272,0.577 543.5,157.077 " />
+                </svg>
+            </section>
+            <section class="section" id="cnt2"></section>
+            <section class="section" id="cnt3"></section>
+            <section class="section" id="cnt4"></section>
+            <section class="section" id="cnt5"></section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:regular,700);
+/* 태그 초기화 */
+body, h1, h2, h3, h4, h5, h6, ul, p{margin: 0;padding: 0;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;}
+ul{list-style: none;}
+a:link, a:visited, a:active, a:hover{text-decoration: none;color: inherit;}
+
+body{font-family: "Noto Sans KR"; font-size: 16px; color: #444;}
+
+/* 헤더 */
+#header{display: flex;justify-content: space-between;position: fixed;top: -70px;left: 0;right: 0;height: 70px;background: rgba(255,255,255,.6);z-index: 1000;transition: top 0.5s ease-in 4s;}
+#header.active{top: 0;}
+.logo{padding: 0 50px;}
+#gnb ul{display: flex;padding-right: 50px;}
+#gnb ul li{padding: 0 20px;}
+#gnb ul li a{display: block;line-height: 70px;}
+
+/* 본문1 */
+#cnt1 .fp-tableCell > *{position: absolute;}
+#cnt1 h2{color: #fff; top: 220px; left: 20%;z-index: 500;}
+#cnt1 h2 .tit1, #cnt1 h2 .tit2{display: block; font-size: 50px;overflow: hidden;margin-top: -70px;height: 150px;}
+#cnt1 h2 .tit1 span.ani, #cnt1 h2 .tit2 span.ani{animation: bounce 1s forwards;}
+#cnt1 h2 span{position: relative;top: -70px;}
+
+.yellow_bg{top: 50%; left: 2%; width: 150%; height: 100vh; background: #f5e35d; transform: rotate(-20deg);}
+.photo{top: 50%; left: 50%; transform: scale(0) translate(0%, 0%);transition: all 1s;transform-origin: left top;}
+#shape{top: 55%; left: 52%; transform: rotate(720deg) scale(0) translate(0%, 0%);transition: all 1.5s cubic-bezier(0.68, 0.05, 0.36, 1) 0.5s;transform-origin: 0% 0%;}
+#shape polygon{stroke-width: 5px; stroke: #fff; fill:transparent;}
+
+/* #wrap.load */
+#wrap.load .photo{transform: scale(1) translate(-50%, -50%);}
+#wrap.load #shape{transform: rotate(0deg) scale(1) translate(-50%, -50%);}
+
+/* 본문2 */
+
+/* 본문3 */
+
+/* 본문4 */
+
+/* 본문5 */
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: 70px;
+    animation-transition-function: ease-out;
+  }
+  35% {
+    top: 52.5px;
+    animation-transition-function: ease-in;
+  }
+  50% {
+    top: 70px;
+    animation-transition-function: ease-out;
+  }
+  60% {
+    top: 65.625px;
+    animation-transition-function: ease-in;
+  }
+  70% {
+    top: 70px;
+    animation-transition-function: ease-out;
+  }
+  80% {
+    top: 68.90625px;
+    animation-transition-function: ease-in;
+  }
+  90% {
+    top: 70px;
+  }
+  95% {
+    top: 69.7265625px;
+  }
+  100% {
+    top: 70px;
+  }
+}
